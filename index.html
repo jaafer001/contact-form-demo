@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A responsive HTML5 contact form with validation using JavaScript.">
+    <meta name="keywords" content="HTML5 contact form, responsive contact form, JavaScript form validation">
+    <meta name="author" content="Your Name">
+    <title>Responsive Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+
+        <form id="contactForm" method="POST" action="#">
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+
+            <div class="input-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Your message"></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="error-message" style="color: red; display: none;">Please fill in all fields correctly.</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
